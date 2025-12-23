@@ -23,6 +23,5 @@ fft::Direction dir);
 
 - Add inverse FFT (IFFT) support.
 - Extend to 2D/3D.
-- Integrate FFTW3 as a backend behind the same interface. [web:41][web:61]
 - Add unit tests and CI with GitHub Actions.
 
