@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.18)
+project(FFTW_Radar CXX)
+set(CMAKE_CXX_STANDARD 20)
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(FFTW3 REQUIRED fftw3f)
+add_executable(fftw_radar main.cpp)
+target_link_libraries(fftw_radar ${FFTW3_LIBRARIES})
+target_include_directories(fftw_radar PRIVATE ${FFTW3_INCLUDE_DIRS})
